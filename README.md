@@ -1,6 +1,13 @@
-Database
-========
+Online CD Manager
+=================
 
+Introduction
+------------
+This is a example CRUD MVC application to manage CD using the ZF2.
+
+
+Database
+---------
 CREATE DATABASE `zend_cd`
     CHARACTER SET 'latin1'
     COLLATE 'latin1_swedish_ci';
