@@ -1,0 +1,40 @@
+<div id="cd-manager">
+    <?php foreach($CdManager as $cd):?>
+    <div class="cd">
+    <div id="cd_label">
+    <b>CD #<?php echo $cd->getId() ?></b>
+    <table>
+    <tr>
+        <td>Name:</td>
+        <td><input class='text' id="cd-name-<?php echo $cd->getId() ?>" type="text" name="name" value="<?php echo $cd->getName()?>"></td>
+    </tr>
+    <tr>
+        <td>Year:</td>
+        <td><input class='text' id="cd-year-<?php echo $cd->getId() ?>" type="text" name="year" maxlength="4" value="<?php echo $cd->getYear()?>"></td>
+    </tr>
+    <tr>
+        <td style="color: gray;">Created:</td>
+        <td><input class='text' id="cd-created-<?php echo $cd->getId() ?>" type="text" name="name" disabled value="<?php echo $cd->getCreated()?>"></td>
+    </tr>
+    <tr>
+        <td style="color: gray;">Updated:</td>
+        <td><input class='text' id="cd-updated-<?php echo $cd->getId() ?>" type="text" name="name" disabled value="<?php echo $cd->getUpdated()?>"></td>
+    </tr>          
+    </table>
+    <textarea class='text' style="resize: none; overflow: hidden;" rows="2" cols="28" id="cd-note-<?php echo $cd->getId() ?>"><?php echo $cd->getNote() ?></textarea>
+    </div>
+    
+    <a href="#" id="remove-<?php echo $cd->getId(); ?>"class="delete-cd">X</a>
+    </div>
+    <?php endforeach; ?>
+
+    
+    <div id="create">+</div>
+
+</div>
+<div class="clear-both"></div>
+                                
+
+
+
+
