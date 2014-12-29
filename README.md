@@ -5,9 +5,11 @@ Introduction
 ------------
 This is a example CRUD MVC application to manage CD using the ZF2.
 
+![Screenshot](http://github.com/ABaikuzin/CRUD-Zend-MVC/blob/master/screen.png)
 
 Database
 ---------
+``` 
 CREATE DATABASE `zend_cd`
     CHARACTER SET 'latin1'
     COLLATE 'latin1_swedish_ci';
@@ -33,4 +35,4 @@ INSERT INTO `cdmanager` (`id`, `name`, `year`, `note`, `created`, `updated`) VAL
   (10,'Four - One Direction','2015','Genre: Rock/Pop\nArtist: One Direction','2014-12-23 10:02:59','2014-12-23 05:03:00'),
   (12,'McBusted','N/A','N/A','2014-12-23 10:08:25','2014-12-23 05:08:26');
 COMMIT;
-
+``` 
