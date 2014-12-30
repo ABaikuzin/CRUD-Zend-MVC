@@ -5,6 +5,8 @@ Introduction
 ------------
 This is a example CRUD MVC application to manage CD using the ZF2.
 
+Screenshot
+---------
 ![Screenshot](https://raw.githubusercontent.com/ABaikuzin/CRUD-Zend-MVC/master/screen.png)
 
 Database
